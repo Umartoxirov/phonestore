@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Phone Store | Smartphones and accessories in Uzbekistan</title>
+  <meta name="description"
+    content="Discover the latest smartphones, premium accessories, and the best deals in one place.">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="header" id="home">
+    <div class="container header-inner">
+      <a href="#home" class="logo" aria-label="Phone Store home"><span class="logo-mark"></span>Phone Store</a>
+      <nav class="nav" id="nav" aria-label="Main navigation">
+        <a href="#home">Home</a>
+        <a href="#products" data-filter="">Smartphones</a>
+        <a href="#products" data-filter="Accessories">Accessories</a>
+        <a href="#about">About Us</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <form class="search" id="searchForm" role="search">
+        <label for="searchInput" class="sr">Search products</label>
+        <input id="searchInput" type="search" placeholder="Search phones" autocomplete="off">
+      </form>
+      <div class="actions">
+        <button class="icon-btn" id="accountBtn" aria-label="Account">
+          <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8">
+            <circle cx="12" cy="8" r="4" />
+            <path d="M4 21c0-4.4 3.6-7 8-7s8 2.6 8 7" />
+          </svg>
+        </button>
+        <button class="icon-btn" id="cartBtn" aria-label="Open cart">
+          <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8">
+            <path d="M3 4h2l2.4 11h10.2L20 7H6.2" />
+            <circle cx="9" cy="19.5" r="1.5" />
+            <circle cx="17" cy="19.5" r="1.5" />
+          </svg>
+          <span class="badge" id="cartCount">0</span>
+        </button>
+        <button class="icon-btn menu-btn" id="menuBtn" aria-label="Toggle menu" aria-expanded="false"
+          aria-controls="nav"><span></span><span></span><span></span></button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero">
+      <div class="container hero-inner">
+        <div class="hero-text">
+          <h1>Find Your Perfect Smartphone</h1>
+          <p>Discover the latest smartphones, premium accessories, and the best deals in one place.</p>
+          <div class="btn-row">
+            <a href="#products" class="btn btn-primary">Shop Now</a>
+            <a href="#categories" class="btn btn-ghost">Explore Products</a>
+          </div>
+        </div>
+        <div class="hero-img"><img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXf4uUdzMC7ij67UoH2wmitx3DoQdoISeHKdayFeXAfw&s=10"
+            alt="Blue flagship smartphone, rear view" width="400" height="520"></div>
+      </div>
+    </section>
+
+    <section class="section" id="categories">
+      <div class="container">
+        <h2 class="title">Shop by category</h2>
+        <div class="cat-grid">
+          <button class="cat" data-brand="iPhone"><img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2d3JiIYErSjJw4wN6A_-cZXH2rq3fuu0K40V9m8IiQlpRjcacOrTOs6I&s=10"
+              alt="" loading="lazy"><span>iPhone</span></button>
+          <button class="cat" data-brand="Samsung"><img
+              src="https://radius.uz/_next/image?url=https%3A%2F%2Fnew.api.radius.uz%2Fmedia%2Fimages%2Fproduct%2Fdc004f7af99946edb2a1aa972e9feb22.webp&w=1024&q=75"
+              alt="" loading="lazy"><span>Samsung</span></button>
+          <button class="cat" data-brand="Xiaomi"><img
+              src="https://castore.uz/upload/iblock/5fd/3vtkg64psej1271pyhjznyi66p4bvfx1/smartfon-xiaomi-14-12-512gb-black-v-komplekte-redmi-12-4-128gb-midnight-black-4.jpeg"
+              alt="" loading="lazy"><span>Xiaomi</span></button>
+          <button class="cat" data-brand="Redmi"><img
+              src="https://mini-io-api.texnomart.uz/catalog/product/3581/358101/207875/27c95d19-5a98-4db0-861c-d6198164e458.webp"
+              alt="" loading="lazy"><span>Redmi</span></button>
+          <button class="cat" data-brand="Honor"><img
+              src="https://mini-io-api.texnomart.uz/catalog/product/3582/358219/208467/2664f6d4-1905-4d48-9b2e-1bbd95c141ee.webp"
+              alt="" loading="lazy"><span>Honor</span></button>
+          <button class="cat" data-brand="Accessories"><img
+              src="https://castore.uz/upload/iblock/21f/n3ik5lagbxqzk61n9g3a05juic2tvl65/besprovodnye-naushniki-airpods-pro-2nd-generation-mtjv3ru-a.webp"
+              alt="" loading="lazy"><span>Phone
+              Accessories</span></button>
+        </div>
+      </div>
+    </section>
+
+    <section class="section gray" id="products">
+      <div class="container">
+        <h2 class="title">Featured products</h2>
+        <p class="note">All prices are demo prices for design purposes and are not verified.</p>
+        <div class="filters">
+          <div class="field"><label for="brandSel">Brand</label>
+            <select id="brandSel">
+              <option value="">All brands</option>
+
+              <option>iPhone</option>
+
+              <option>Samsung</option>
+              <option>Xiaomi</option>
+              <option>Redmi</option>
+              <option>Honor</option>
+              <option>Accessories</option>
+            </select>
+          </div>
+          <div class="field"><label for="priceSel">Price range</label>
+            <select id="priceSel">
+              <option value="">Any price</option>
+              <option value="0-3000000">Under 3 000 000</option>
+              <option value="3000000-6000000">3 000 000 – 6 000 000</option>
+              <option value="6000000-12000000">6 000 000 – 12 000 000</option>
+              <option value="12000000-999999999">Over 12 000 000</option>
+            </select>
+          </div>
+          <div class="field"><label for="sortSel">Sort by</label>
+            <select id="sortSel">
+              <option value="popular">Most popular</option>
+              <option value="low">Price: low to high</option>
+              <option value="high">Price: high to low</option>
+            </select>
+          </div>
+          <button class="btn btn-ghost" id="resetBtn" type="button">Reset</button>
+        </div>
+        <div class="prod-grid" id="productGrid" aria-live="polite"></div>
+        <p class="empty" id="emptyMsg" hidden>No products match your filters. Try another brand or price range, or reset
+          the filters.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container offer">
+        <div class="offer-text">
+          <h2>Up to 15% off selected smartphones</h2>
+          <p>Save on flagship and mid-range models this season. Demo offer for illustration only.</p>
+          <a href="#products" class="btn btn-light" id="offersBtn">View Offers</a>
+        </div>
+        <!-- <img src="images/iphone17.svg" alt="Orange smartphone, rear view" loading="lazy" width="400" height="520"> -->
+      </div>
+    </section>
+
+    <section class="section gray" id="about">
+      <div class="container">
+        <h2 class="title">Why choose us</h2>
+        <div class="feat-grid">
+          <article class="feat">
+            <h3>Official-quality products</h3>
+            <p>Phones and accessories chosen for build quality and reliability.</p>
+          </article>
+          <article class="feat">
+            <h3>Warranty support</h3>
+            <p>Get help with warranty questions after your purchase.</p>
+          </article>
+          <article class="feat">
+            <h3>Fast delivery across Uzbekistan</h3>
+            <p>Orders shipped to cities and regions nationwide.</p>
+          </article>
+          <article class="feat">
+            <h3>Secure payment options</h3>
+            <p>Pay with the method that suits you, protected at checkout.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <h2 class="title">Customer reviews</h2>
+        <p class="note">Sample reviews for demonstration. They are not from verified customers.</p>
+        <div class="rev-grid">
+          <figure class="rev">
+            <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
+            <blockquote>Clear prices and a simple checkout. The phone arrived well packed.</blockquote>
+            <figcaption>Aziz K. (sample)</figcaption>
+          </figure>
+          <figure class="rev">
+            <div class="stars" aria-label="4 out of 5 stars">★★★★☆</div>
+            <blockquote>Easy to compare models by price. Delivery was quicker than I expected.</blockquote>
+            <figcaption>Dilnoza R. (sample)</figcaption>
+          </figure>
+          <figure class="rev">
+            <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
+            <blockquote>Helpful support when I asked about storage options for my new phone.</blockquote>
+            <figcaption>Jasur M. (sample)</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="section news" id="newsletter">
+      <div class="container">
+        <h2>Get new deals by email</h2>
+        <p>Subscribe for launches and offers. This form is a frontend demo and does not send emails.</p>
+        <form id="newsForm" novalidate>
+          <label for="email" class="sr">Email address</label>
+          <input id="email" type="email" placeholder="you@example.com" autocomplete="email" required>
+          <button class="btn btn-primary" type="submit">Subscribe</button>
+        </form>
+        <p class="form-msg" id="newsMsg" role="status"></p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer" id="contact">
+    <div class="container foot-grid">
+      <div><a href="#home" class="logo"><span class="logo-mark"></span>Phone Store</a>
+        <p>Smartphones and accessories with delivery across Uzbekistan.</p>
+      </div>
+      <div>
+        <h3>Quick links</h3><a href="#home">Home</a><a href="#products">Smartphones</a><a href="#about">About Us</a><a
+          href="#contact">Contact</a>
+      </div>
+      <div>
+        <h3>Categories</h3><a href="#products" data-filter="iPhone">iPhone</a><a href="#products"
+          data-filter="Samsung">Samsung</a><a href="#products" data-filter="Xiaomi">Xiaomi</a><a href="#products"
+          data-filter="Honor">Honor</a>
+      </div>
+      <div>
+        <h3>Contact</h3>
+        <p>Tashkent, Uzbekistan (address placeholder)</p>
+        <p>+998 99 521 81 21</p>
+        <p>info@phonestore.example</p>
+        <p class="social"><a href="https://www.instagram.com/_toxirov.u/" aria-label="Instagram">Instagram</a><a
+            href="@toxirov_umar" aria-label="Telegram">Telegram</a><a href="#" aria-label="Facebook">Facebook</a></p>
+      </div>
+    </div>
+    <p class="copy">© 2026 Phone Store. All rights reserved.</p>
+  </footer>
+
+  <div class="overlay" id="overlay" hidden></div>
+  <aside class="drawer" id="drawer" aria-label="Shopping cart" aria-hidden="true">
+    <div class="drawer-head">
+      <h2>Your cart</h2><button class="icon-btn" id="closeCart" aria-label="Close cart">✕</button>
+    </div>
+    <div class="cart-items" id="cartItems"></div>
+    <div class="cart-foot">
+      <div class="row"><span>Subtotal</span><span id="subtotal">0</span></div>
+      <div class="row"><span>Delivery</span><span>Free (demo)</span></div>
+      <div class="row total"><span>Total</span><span id="total">0</span></div>
+      <button class="btn btn-primary full" id="checkoutBtn">Checkout</button>
+    </div>
+  </aside>
+
+  <div class="modal" id="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle" hidden>
+    <div class="modal-box"><button class="icon-btn modal-x" id="modalClose" aria-label="Close">✕</button>
+      <div id="modalBody"></div>
+    </div>
+  </div>
+  <div class="toast" id="toast" role="status"></div>
+  <script src="script.js"></script>
+</body>
+
+</html>
